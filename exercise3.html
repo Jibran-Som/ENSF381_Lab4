@@ -48,8 +48,13 @@
             
             let student1 = classInfo.students[0];
             let student2 = classInfo.students[1];
+            let remainingStudents = classInfo.students.splice(2,classInfo.students.length);
+            
             console.log(student1);
             console.log(student2);
+            console.log(remainingStudents);
+
+
 
 
             //classInfo.students.forEach((element) => console.log(element));
