@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+
+        //function add(num1,num2 = 0){return num1 + num2;}
+        //function subtract(num1,num2 = 0){return num1 - num2;}
+        //function multiply(num1,num2 = 0){return num1 * num2;}
+        //function divide(num1,num2 = 1){if (y == 0){return null;} return x/y;}
+        let add = (x = 0,y = 0) => x + y;
+        let subtract = (x = 0,y = 0) => x - y;
+        
+        let multiply = (x = 0, y = 0) => x * y;
+        let divide = (x = 0, y = 1) => {if (y == 0){return null;}x / y};
+
+
+
+        function calculator(num1, num2, callback){ 
+            let s = callback(num1, num2);
+            return s;
+        }
+
+        
+    </script>
+    
+</body>
+</html>
